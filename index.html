@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playlist dos Coroas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Ícones Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Estilo Personalizado -->
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Seção de Home -->
+
+      <section
+        id="inicio"
+        class="hero-section background-gradient text-uppercase"
+      >
+        <div class="container py-3">
+          <!-- Logo -->
+          <div class="logo-wrapper mb-3 text-center">
+            <img
+              src="assets/img/logo.png"
+              alt="Logo Playlist dos Coroas"
+              class="img-fluid"
+              style="max-height: 200px"
+            />
+          </div>
+
+          <!-- Vídeo -->
+          <div
+            class="video-wrapper mb-3 position-relative mx-auto"
+            style="max-width: 700px"
+          >
+            <video
+              class="w-100 rounded-4 shadow-lg"
+              controls
+              autoplay
+              muted
+              loop
+            >
+              <source src="assets/midia/video-playlist.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+          </div>
+
+          <!-- Descrição -->
+          <div
+            class="hero-content text-start px-4 mx-auto"
+            style="max-width: 700px"
+          >
+            <p class="lead mb-4">
+              Os <span class="highlight">grandes sucessos</span> de todos os
+              tempos, reunidos em pastas separadas por gêneros
+              <span class="highlight">pra você ouvir</span>
+              onde e quando quiser.
+            </p>
+            <div class="text-center">
+              <a
+                href="#compra"
+                class="action-button pulse-animation border-highlight"
+              >
+                <i class="bi bi-music-note-beamed me-2"></i>
+                Baixar Playlist Agora!
+              </a>
+            </div>
+            <!-- Selo de Segurança -->
+            <div class="text-center mt-3">
+              <div class="security-icons">
+                <i class="fas fa-shield-alt" title="Compra Protegida"></i>
+                <i class="fas fa-lock" title="Pagamento Seguro"></i>
+                <i
+                  class="fas fa-check-circle"
+                  title="Garantia de Satisfação"
+                ></i>
+              </div>
+              <p class="security-text">Compra 100% Segura e Garantida</p>
+            </div>
+          </div>
+        </div>
+        <div class="separador-triangulo"></div>
+      </section>
+
+      <!-- Prévia Musical -->
+      <section id="previa" class="container py-5">
+        <div class="text-center mb-5">
+          <img
+            src="assets/img/disc.png"
+            alt="icone de ondas sonora"
+            style="width: 50px; height: 50px"
+          />
+          <h2 class="gradient-text">Ouça Sucessos Inesquecíveis!</h2>
+          <p class="lead text-muted">
+            São mais de 8.000 músicas no formato Mp3, com qualidade de 320 Kbps,
+            todas no mesmo volume de som, com intervalos de apenas 2'segundos,
+            entre uma e outra.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="preview-player text-center">
+              <h5>Rock dos anos 80</h5>
+              <audio
+                controls
+                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+              ></audio>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="preview-player text-center">
+              <h5>Clássicos Sertanejos</h5>
+              <audio
+                controls
+                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+              ></audio>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="preview-player text-center">
+              <h5>Grandes Sambas</h5>
+              <audio
+                controls
+                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+              ></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos Slider (somente imagens) -->
+      <section
+        id="depoimentos"
+        class="container py-5 background-gradient text-center"
+      >
+        <img
+          src="assets/img/client.png"
+          alt="icone de ondas sonora"
+          style="width: 50px; height: 50px"
+        />
+        <h2 class="display-6 fw-bold mb-4">Nossos Clientes Aprovam</h2>
+        <p class="lead">Veja o que dizem sobre nossa playlist</p>
+        <div
+          id="depoimentosCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <img
+                src="https://picsum.photos/400/300?random=11"
+                class="img-fluid rounded shadow"
+                alt="Depoimento 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/400/300?random=12"
+                class="img-fluid rounded shadow"
+                alt="Depoimento 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/400/300?random=13"
+                class="img-fluid rounded shadow"
+                alt="Depoimento 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#depoimentosCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#depoimentosCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Gêneros musicais -->
+      <section id="generos" class="container text-center py-5">
+        <h2 class="mb-4 gradient-text">
+          <img
+            src="assets/img/sound.png"
+            alt="icone de ondas sonora"
+            style="width: 50px; height: 50px"
+          />
+          <br />
+          PLAYLIST DOS COROAS
+        </h2>
+        <div class="genres-grid">
+          <button class="genre-btn">ANOS 60, 70, 80, 90 e 2000 (Remix)</button>
+          <button class="genre-btn">BREGAS (Remix)</button>
+          <button class="genre-btn">ITALIANAS 60,70,80 (Originais)</button>
+          <button class="genre-btn">
+            INTERNACIONAIS 60,70,80 (Originais Remix)
+          </button>
+          <button class="genre-btn">
+            NACIONAIS - Vários artistas - 60,70 e 80 (Remix)
+          </button>
+          <button class="genre-btn">
+            CLASSICOS DA MPB - Originais todos os tempos
+          </button>
+          <button class="genre-btn">CLÁSSICOS DOS BOLEROS - Luiz Miguel</button>
+          <button class="genre-btn">
+            DISCO MUSIC - Internacionais (Remix)
+          </button>
+          <button class="genre-btn">
+            FESTA DE REVEILLON - (Nacionais e Internacionais)
+          </button>
+          <button class="genre-btn">FORRÓ TRADICIONAL - (Originais)</button>
+          <button class="genre-btn">
+            GRANDE ORQUESTRAS - (Internacionais)
+          </button>
+          <button class="genre-btn">
+            INTERNACIONAIS - (Vários artistas Originais)
+          </button>
+          <button class="genre-btn">
+            LATINAS - Vários artistas (Originais)
+          </button>
+          <button class="genre-btn">NEW FORRÓ - (Várias Bandas)</button>
+          <button class="genre-btn">
+            PISEIRO - Vários artistas (Originais)
+          </button>
+          <button class="genre-btn">ROCK - Internacionais (Remix)</button>
+          <button class="genre-btn">SAMBA DO REVELAÇÃO - (Originais)</button>
+          <button class="genre-btn">SAMBA RAIZ (Originais)</button>
+          <button class="genre-btn">SAMBAS E PAGODES 2000 (Originais)</button>
+          <button class="genre-btn">SERTANEJAS (Antigas)</button>
+          <button class="genre-btn">SERTANEJAS 2000 (Originais)</button>
+          <button class="genre-btn">TOPS 2000 (Nacionais)</button>
+          <button class="genre-btn">ARROCHA - (Vários artistas)</button>
+          <button class="genre-btn">
+            CARNAVAL BAHIA - Vários artistas (Originais)
+          </button>
+          <button class="genre-btn">
+            CARNAVAL RECIFE - Vários artistas (Originais)
+          </button>
+          <button class="genre-btn">BRUNO E MARRONE - (Antigas)</button>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Seção de Venda -->
+      <section id="compra" class="pricing-section py-5">
+        <div class="container">
+          <div
+            class="pricing-card mx-auto bg-white rounded-4 shadow-lg p-4"
+            style="max-width: 600px"
+          >
+            <!-- Logo -->
+            <div class="text-center mb-4">
+              <img
+                src="assets/img/logo.png"
+                alt="Logo Playlist dos Coroas"
+                class="img-fluid"
+                style="max-height: 80px"
+              />
+            </div>
+
+            <!-- Cabeçalho do Card -->
+            <div class="text-center mb-4">
+              <h2 class="section-title gradient-text text-white">
+                <i class="fas fa-star me-2"></i>Oferta Especial
+              </h2>
+
+              <!-- Preços -->
+              <div class="pricing-amount">
+                <span class="old-price">R$ 49,90</span>
+                <div class="current-price">
+                  <span class="currency">R$</span>
+                  <span class="amount">19</span>
+                  <span class="cents">,90</span>
+                </div>
+              </div>
+
+              <!-- Mensagem de Entrega -->
+              <p class="delivery-info mt-3">
+                Após a compra, você receberá um LINK com todas as informações
+                necessárias para baixar todas as pastas.
+              </p>
+            </div>
+
+            <!-- Lista de Benefícios -->
+            <div class="benefits-list mb-4">
+              <div class="benefit-item">
+                <i class="fas fa-music text-primary"></i>
+                <span>Mais de 8.000 músicas organizadas por gênero</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-mobile-alt text-success"></i>
+                <span>Compatível com todos os dispositivos</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-folder-open text-warning"></i>
+                <span>Organização por pastas para fácil navegação</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-headphones text-info"></i>
+                <span>Músicas em Alta Qualidade</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle text-success"></i>
+                <span>Compatível com Todos Dispositivos</span>
+              </div>
+            </div>
+
+            <!-- Formas de Pagamento -->
+            <div class="payment-methods text-center mb-4">
+              <p class="small text-muted mb-2">Formas de Pagamento</p>
+              <div class="payment-icons">
+                <img
+                  src="https://img.icons8.com/color/48/000000/pix.png"
+                  alt="Pix"
+                  width="40"
+                />
+                <img
+                  src="https://img.icons8.com/color/48/000000/visa.png"
+                  alt="Cartão"
+                  width="40"
+                />
+                <img
+                  src="https://img.icons8.com/color/48/000000/mastercard.png"
+                  alt="Cartão"
+                  width="40"
+                />
+                <img
+                  src="https://img.icons8.com/color/48/000000/boleto-bankario.png"
+                  alt="Boleto"
+                  width="40"
+                />
+              </div>
+            </div>
+
+            <!-- Botão de Compra -->
+            <div class="text-center mb-4">
+              <a href="pages/vendas.html" class="buy-button pulse-animation">
+                <i class="fas fa-shopping-cart me-2"></i>
+                Comprar Agora
+              </a>
+            </div>
+
+            <!-- Selo de Segurança -->
+            <div class="security-features mt-3">
+              <div class="security-icons">
+                <i class="fas fa-shield-alt" title="Compra Protegida"></i>
+                <i class="fas fa-lock" title="Pagamento Seguro"></i>
+                <i
+                  class="fas fa-check-circle"
+                  title="Garantia de Satisfação"
+                ></i>
+              </div>
+              <p class="security-text">Compra 100% Segura e Garantida</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Segurança e Garantia -->
+      <section class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <img
+              src="assets/img/selo.png"
+              alt="Descrição da Imagem"
+              class="img-fluid rounded mb-4"
+              style="max-width: 500px; width: 100%"
+            />
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-lock-fill text-primary fs-1"></i>
+            <h5>Compra 100% segura</h5>
+            <p>Proteção completa dos seus dados na hora do pagamento.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-award-fill text-success fs-1"></i>
+            <h5>Selo de Qualidade</h5>
+            <p>Conteúdo de alta qualidade, cuidadosamente selecionado.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <i class="bi bi-arrow-counterclockwise fs-1 text-warning"></i>
+            <h5>Garantia de 7 dias</h5>
+            <p>Se não ficar satisfeito, devolvemos seu dinheiro!</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Seção Explicação do Produto -->
+      <section class="container text-center py-5 background-gradient">
+        <div class="">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <i class="bi bi-music-note-beamed text-black display-1"></i>
+              <h2 class="display-5 fw-bold mb-4">
+                A Melhor Seleção Musical Para Sua Diversão
+              </h2>
+
+              <p class="lead mb-4">
+                Uma coleção única com os maiores sucessos de todos os tempos,
+                cuidadosamente selecionados e organizados para você curtir seus
+                momentos especiais com a melhor qualidade de som.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-center">
+              <img
+                src="assets/img/bg-cd.jpg"
+                alt="Preview nos dispositivos"
+                class="img-fluid rounded-4 hover-scale"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- FAQ (Perguntas Frequentes) -->
+      <section id="faq" class="container py-5">
+        <h2 class="text-center gradient-text mb-5">
+          <i class="bi bi-question-circle"></i> Perguntas Frequentes
+        </h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                Como recebo a playlist?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Você receberá o link para download por e-mail imediatamente após
+                a confirmação do pagamento.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                Quais formas de pagamento aceitam?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Aceitamos Pix, Cartões de Crédito, Débito e Boleto Bancário.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                E se eu perder o arquivo?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Basta nos enviar um e-mail e reenviamos o link gratuitamente
+                para você.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+              >
+                Vocês oferecem suporte?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sim! Temos suporte dedicado via WhatsApp para ajudar no que
+                precisar.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      href="https://wa.me/5500000000000?text=Olá! Gostaria de saber mais sobre a Playlist dos Coroas"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="bi bi-whatsapp"></i>
+      <span class="whatsapp-text">Tire suas dúvidas pelo WhatsApp</span>
+    </a>
+
+    <!-- Rodapé -->
+    <footer class="footer-section text-center mt-5 background-gradient">
+      <div class="container">
+        <p class="mb-2">
+          © 2025 Playlist dos Coroas. Todos os direitos reservados.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
+  </body>
+</html>

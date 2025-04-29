@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento com Pix</title>
+  </head>
+  <body>
+    <h1>Comprar CD Playlist dos Coroas</h1>
+    <button onclick="gerarPix()">Gerar Pix</button>
+    <div id="resultado"></div>
+
+    <script>
+      async function gerarPix() {
+        const resposta = await fetch("http://localhost:3000/pagamento", {
+          method: "POST",
+        });
+
+        const dados = await resposta.json();
+        document.getElementById("resultado").innerHTML = `
+        <p><strong>Copie e cole:</strong></p>
+        <textarea rows="4" cols="50">${dados.qr_code}</textarea>
+        <p><strong>Ou escaneie:</strong></p>
+        <img src="${dados.qr_code_base64}" alt="QR Code Pix" />
+      `;
+      }
+    </script>
+  </body>
+</html>
