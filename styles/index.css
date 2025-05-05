@@ -2,6 +2,8 @@
 :root {
   --primary-color: #7f5af0; /* Roxo Violeta */
   --secondary-color: #3c9ee7; /* Azul Claro */
+  --tertiary-color: #f9c74f; /* Amarelo Claro */
+  --quaternary-color: #f3722c; /* Laranja Claro */
   --background-color: #f5f7fb; /* Fundo geral */
   --accent-color: #00a9f4; /* azul claro */
   --dark-color: #1f1f1f; /* Texto escuro */
@@ -40,8 +42,8 @@ body {
 .genre-btn {
   background: linear-gradient(
     135deg,
-    var(--primary-color),
-    var(--secondary-color)
+    var(--quaternary-color),
+    var(--tertiary-color)
   );
   border: none;
   color: var(--light-color);
@@ -63,8 +65,8 @@ body {
   transform: translateY(-3px);
   background: linear-gradient(
     135deg,
-    var(--secondary-color),
-    var(--primary-color)
+    var(--tertiary-color),
+    var(--quaternary-color)
   );
   box-shadow: 0 8px 20px var(--shadow-color);
 }
