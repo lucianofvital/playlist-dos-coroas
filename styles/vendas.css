@@ -1,0 +1,57 @@
+clientes\Pedro\playlist-dos-coroas\styles\vendas.css .payment-page {
+  min-height: 100vh;
+}
+
+.payment-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.price-display {
+  text-align: center;
+  background: linear-gradient(45deg, #ff4747 0%, #ff8a8a 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+.price-display .amount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.qr-code-container {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.qr-code-container img {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.copy-code-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.instruction-list {
+  padding-left: 1.2rem;
+}
+
+.instruction-list li {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.payment-step {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.payment-step.active {
+  opacity: 1;
+}
