@@ -128,6 +128,20 @@ body {
   margin-bottom: 1rem;
 }
 
+.depoimentos-carousel-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+}
 /* Estrelas */
 .stars {
   color: #ffd700; /* Amarelo Ouro */

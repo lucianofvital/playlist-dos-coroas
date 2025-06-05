@@ -109,10 +109,11 @@
       <section id="previa" class="container py-5">
         <div class="text-center mb-5">
           <img
-            src="assets/img/disc.png"
+            src="assets/img/disco.coroa.png"
             alt="icone de ondas sonora"
-            style="width: 50px; height: 50px"
+            style="width: 400px; height: 400px"
           />
+
           <h2 class="gradient-text">Ouça Sucessos Inesquecíveis!</h2>
           <p class="lead text-muted">
             São mais de 8.000 músicas no formato Mp3, com qualidade de 320 Kbps,
@@ -172,21 +173,21 @@
             <div class="carousel-item active">
               <img
                 src="assets/img/feedback01.png"
-                class="img-fluid rounded shadow"
+                class="img-fluid"
                 alt="Depoimento 1"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="assets/img/feedback02.png"
-                class="img-fluid rounded shadow"
+                class="img-fluid"
                 alt="Depoimento 2"
               />
             </div>
             <div class="carousel-item">
               <img
                 src="assets/img/feedback03.png"
-                class="img-fluid rounded shadow"
+                class="img-fluid"
                 alt="Depoimento 3"
               />
             </div>
@@ -207,6 +208,15 @@
           >
             <span class="carousel-control-next-icon"></span>
           </button>
+        </div>
+        <br /><br />
+        <div class="text-center">
+          <img
+            src="assets/img/img001.png"
+            alt="icone de ondas sonora"
+            class="img-fluid w-100"
+            style="max-height: 400px; object-fit: contain; margin-bottom: -50px"
+          />
         </div>
       </section>
 
@@ -273,15 +283,65 @@
           </button>
           <button class="genre-btn">BRUNO E MARRONE - (Antigas)</button>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <img
-              src="assets/img/garantia.png"
-              alt="Descrição da Imagem"
-              class="img-fluid rounded mb-4"
-              style="max-width: 500px; width: 100%"
-            />
+        <br />
+        <div
+          id="depoimentosCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/banda1.jpg"
+                class="img-fluid"
+                alt="Depoimento 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/banda2.jpg"
+                class="img-fluid"
+                alt="Depoimento 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/banda3.jpg"
+                class="img-fluid"
+                alt="Depoimento 3"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="assets/img/banda4.jpg"
+                class="img-fluid"
+                alt="Depoimento 1"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="assets/img/banda5.jpg"
+                class="img-fluid"
+                alt="Depoimento 1"
+              />
+            </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#depoimentosCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#depoimentosCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </section>
 
@@ -300,7 +360,7 @@
                 src="assets/img/logo.png"
                 alt="Logo Playlist dos Coroas"
                 class="img-fluid"
-                style="max-height: 80px"
+                style="max-height: 200px"
               />
             </div>
 
@@ -407,13 +467,15 @@
       <!-- Segurança e Garantia -->
       <section class="container py-5">
         <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <img
-              src="assets/img/selo.png"
-              alt="Descrição da Imagem"
-              class="img-fluid rounded mb-4"
-              style="max-width: 500px; width: 100%"
-            />
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <img
+                src="assets/img/garantia.png"
+                alt="Descrição da Imagem"
+                class="img-fluid rounded mb-4"
+                style="max-width: 500px; width: 100%"
+              />
+            </div>
           </div>
         </div>
         <div class="row text-center">
@@ -457,7 +519,7 @@
           <div class="col-lg-6">
             <div class="text-center">
               <img
-                src="assets/img/bg-cd.jpg"
+                src="assets/img/contracapa-cd.png"
                 alt="Preview nos dispositivos"
                 class="img-fluid rounded-4 hover-scale"
               />
@@ -584,9 +646,7 @@
           © 2025 Playlist dos Coroas. Todos os direitos reservados.
         </p>
         <div class="social-links">
-          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
           <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </footer>
