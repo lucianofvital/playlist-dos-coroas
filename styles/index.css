@@ -1,7 +1,7 @@
 /* Paleta de Cores */
 :root {
-  --primary-color: #7f5af0; /* Roxo Violeta */
-  --secondary-color: #3c9ee7; /* Azul Claro */
+  --primary-color: #3c9ee7; /* Azul Claro */
+  --secondary-color: #f3722c; /* Laranja Claro */
   --tertiary-color: #f9c74f; /* Amarelo Claro */
   --quaternary-color: #f3722c; /* Laranja Claro */
   --background-color: #f5f7fb; /* Fundo geral */
@@ -17,6 +17,64 @@ body {
   background: var(--background-color);
   color: var(--dark-color);
   line-height: 1.6;
+}
+
+/* Estilos do Header com Contagem Regressiva */
+.countdown-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: headerPulse 2s infinite;
+}
+
+.countdown-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.countdown-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.countdown-text i {
+  font-size: 1.2rem;
+}
+
+.countdown-timer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Animação de Pulso para o Header */
+@keyframes headerPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Ajuste para o conteúdo principal não ficar escondido pelo header fixo */
+main {
+  margin-top: 30px;
 }
 
 /* Class extra */

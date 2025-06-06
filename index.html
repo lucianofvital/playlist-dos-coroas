@@ -2,8 +2,58 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Playlist dos Coroas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#007bff" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="assets/img/logo.png" />
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+
+    <meta
+      name="description"
+      content="Os grandes sucessos de todos os tempos, reunidos em pastas separadas por gêneros pra você ouvir onde e quando quiser."
+    />
+
+    <meta
+      name="keywords"
+      content="grandes sucessos, sucesso de todos os tempos."
+    />
+
+    <meta name="author" content="Luciano F Vital" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="Playlist dos Coroas | Ouça Sucessos Inesquecíveis!"
+    />
+    <meta
+      property="og:description"
+      content="Os grandes sucessos de todos os tempos, reunidos em pastas separadas por gêneros pra você ouvir onde e quando quiser."
+    />
+    <meta
+      property="og:image"
+      content="https://playlistdoscoroas.free.nf/assets/img/logo.png"
+    />
+
+    <meta property="og:url" content="http://www.playlistdoscoroas.free.nf" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Playlist dos Coroas" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <title>Playlist dos Coroas | Ouça Sucessos Inesquecíveis!</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Teleprag",
+        "url": "http://www.playlistdoscoroas.free.nf",
+        "logo": "https://playlistdoscoroas.free.nf/assets/img/logo.png",
+        "sameAs": []
+      }
+    </script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -33,6 +83,19 @@
   </head>
 
   <body>
+    <header class="countdown-header">
+      <div class="container">
+        <div class="countdown-content">
+          <div class="countdown-text">
+            <i class="fas fa-stopwatch"></i>
+            <span>OFERTA ESPECIAL TERMINA EM:</span>
+          </div>
+          <div class="countdown-timer">
+            <span id="minutes">30</span>:<span id="seconds">00</span>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Seção de Home -->
 
@@ -124,29 +187,20 @@
         <div class="row g-4">
           <div class="col-md-4">
             <div class="preview-player text-center">
-              <h5>Rock dos anos 80</h5>
-              <audio
-                controls
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              ></audio>
+              <h5>Playlist dos Coroas</h5>
+              <audio controls src="assets/midia/europe.mp3"></audio>
             </div>
           </div>
           <div class="col-md-4">
             <div class="preview-player text-center">
-              <h5>Clássicos Sertanejos</h5>
-              <audio
-                controls
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
-              ></audio>
+              <h5>Playlist dos Coroas</h5>
+              <audio controls src="assets/midia/baiao.mp3"></audio>
             </div>
           </div>
           <div class="col-md-4">
             <div class="preview-player text-center">
-              <h5>Grandes Sambas</h5>
-              <audio
-                controls
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
-              ></audio>
+              <h5>Playlist dos Coroas</h5>
+              <audio controls src="assets/midia/diana.mp3"></audio>
             </div>
           </div>
         </div>
@@ -538,8 +592,9 @@
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Você receberá o link para download por e-mail imediatamente após
-                a confirmação do pagamento.
+                Você receberá o link para download imediatamente após a
+                confirmação do pagamento, através de um botão com link para
+                download no Mega.
               </div>
             </div>
           </div>
@@ -561,7 +616,8 @@
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Aceitamos Pix, Cartões de Crédito, Débito e Boleto Bancário.
+                Para maior segurança, aceitamos pagamentos via Pix. É necessário
+                informar Nome, E-mail e CPF para confirmação do Pix.
               </div>
             </div>
           </div>
@@ -583,8 +639,8 @@
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Basta nos enviar um e-mail e reenviamos o link gratuitamente
-                para você.
+                Basta nos enviar o comprovante do Pix por Whatsapp e reenviamos
+                o link gratuitamente para você.
               </div>
             </div>
           </div>
@@ -616,7 +672,7 @@
     </main>
 
     <a
-      href="https://wa.me/5500000000000?text=Olá! Gostaria de saber mais sobre a Playlist dos Coroas"
+      href="https://wa.me/558192260365?text=Olá! Gostaria de saber mais sobre a Playlist dos Coroas"
       class="whatsapp-float"
       target="_blank"
     >
@@ -639,5 +695,6 @@
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/countdown.js"></script>
   </body>
 </html>
