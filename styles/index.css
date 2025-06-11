@@ -1,7 +1,7 @@
 /* Paleta de Cores */
 :root {
-  --primary-color: #3c9ee7; /* Azul Claro */
-  --secondary-color: #f3722c; /* Laranja Claro */
+  --primary-color: #cf04f8; /* Gradiente bottom */
+  --secondary-color: #03b1fc; /* Gradiente top */
   --tertiary-color: #f9c74f; /* Amarelo Claro */
   --quaternary-color: #f3722c; /* Laranja Claro */
   --background-color: #f5f7fb; /* Fundo geral */
@@ -540,4 +540,77 @@ h6,
 .action-button,
 .buy-button {
   font-weight: 700; /* Mais negrito para elementos importantes */
+}
+
+/* Estilos para as Instruções de Pagamento */
+.payment-instructions {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.step-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+.step-content h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.alternative-option {
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .step-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .guarantees .col-md-4 {
+    margin-bottom: 1rem;
+  }
 }
